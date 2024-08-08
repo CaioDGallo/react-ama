@@ -8,8 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-#TODO: Remove this comment after adding the github actions deploy
-#dist
+dist
 dist-ssr
 *.local
 
