@@ -4,7 +4,7 @@
 
 ![License](https://img.shields.io/github/license/CaioDGallo/react-ama)
 
-Welcome to the React Go-AMA (Ask Me Anything) application! This project is built using React and Vite, providing a fast and modern development experience.
+Welcome to the React Go-AMA (Ask Me Anything) application! This project is built using GoLang, React, and Vite, providing a fast and modern development experience.
 
 ## Table of Contents
 
@@ -12,7 +12,6 @@ Welcome to the React Go-AMA (Ask Me Anything) application! This project is built
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
