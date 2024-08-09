@@ -14,7 +14,9 @@ const router = createBrowserRouter([
         path: '/room/:roomId',
         element: <Room />
     }
-])
+], {
+        basename: `${import.meta.env.VITE_APP_BASENAME}`
+})
 
 export function App() {
     return <QueryClientProvider client={queryClient}>
