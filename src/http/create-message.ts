@@ -4,7 +4,7 @@ interface CreateMessageRequest {
 }
 
 export async function createMessage({ roomId, message }: CreateMessageRequest) {
-    const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/api/rooms/${roomId}/messages`, {
+    const response = await fetch(`${import.meta.env.VITE_APP_API_SCHEMA}${import.meta.env.VITE_APP_API_URL}/api/rooms/${roomId}/messages`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

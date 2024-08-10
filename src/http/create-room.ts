@@ -3,7 +3,7 @@ interface CreateRoomRequest {
 }
 
 export async function createRoom({ theme }: CreateRoomRequest) {
-    const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/api/rooms`, {
+    const response = await fetch(`${import.meta.env.VITE_APP_API_SCHEMA}${import.meta.env.VITE_APP_API_URL}/api/rooms`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

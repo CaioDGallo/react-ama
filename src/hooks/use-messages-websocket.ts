@@ -15,7 +15,7 @@ export function useMessagesWebsocket({ roomId }: UseMessagesWebSocketParams) {
     const queryClient = useQueryClient()
 
     useEffect(() => {
-        const ws = new WebSocket(`ws://localhost:8080/subscribe/${roomId}`);
+        const ws = new WebSocket(`${import.meta.env.VITE_APP_API_WS_SCHEMA}${import.meta.env.VITE_APP_API_URL}/subscribe/${roomId}`);
 
         ws.onopen = () => {
             console.log('connected');
@@ -72,12 +72,9 @@ export function useMessagesWebsocket({ roomId }: UseMessagesWebSocketParams) {
                         if(!state){
                             return undefined
                         }
-                        console.log(state)
-                        console.log(data.value)
 
                         return {
                             messages: state.messages.map(message => {
-                                console.log(message.id === data.value.id)
                                 if(message.id === data.value.id){
                                     return {
                                         ...message,
